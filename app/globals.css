@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-bg-card: #f9fafb;
+    --color-text: #111827;
+    --color-text-secondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #2563eb;
+    --color-code-bg: #f3f4f6;
+  }
+
+  .dark {
+    --color-bg: #0a0c10;
+    --color-bg-card: #13161a;
+    --color-text: #f9fafb;
+    --color-text-secondary: #9ca3af;
+    --color-border: #1f2937;
+    --color-accent: #3b82f6;
+    --color-code-bg: #111827;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
