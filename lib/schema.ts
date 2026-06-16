@@ -42,7 +42,7 @@ const SkillGroupSchema = z.object({
 
 const ExperienceSchema = z.object({
   role: z.string(),
-  company: z.string(),
+  company: z.string().optional(),
   period: z.string(),
   description: z.string().optional(),
 });

@@ -27,17 +27,18 @@ skills:
 experience:
   - role: "地级护网红队"
     period: "2025.09.01 - 2025.09.14"
+    company: "护网行动"
     description: "负责信息收集与漏洞挖掘，累计挖到了50+漏洞，包括命令执行、SQL注入、未授权访问等高危类型"
 
 projects:
-  - name: "heap-exploit-toolkit"
-    url: "https://github.com/zhangsan/heap-exploit-toolkit"
-    description: "一套堆利用自动化工具集，支持 glibc 2.23-2.38"
-    stars: 256
+  - name: "security-tech-blog"
+    url: "https://github.com/ycandco09/blog"
+    description: "基于 Next.js 的个人安全技术博客，支持 SSG 静态生成"
+    stars: 10
   - name: "CTF-Notes"
-    url: "https://github.com/zhangsan/CTF-Notes"
+    url: "https://github.com/ycandco09/CTF-Notes"
     description: "个人 CTF 参赛笔记与题解归档"
-    stars: 89
+    stars: 5
 
 certifications:
   - name: "Pre-A"
