@@ -1,40 +1,33 @@
 ---
-name: "张三"
-title: "二进制安全研究员"
-email: "zhangsan@example.com"
-github: "github.com/zhangsan"
-blog: "zhangsan.blog"
-location: "北京"
+name: "薛易灿"
+title: "渗透测试工程师"
+email: "3141507307@qq.com"
+github: "github.com/ycandco09"
+blog: "https://ycandco09.github.io/blog/"
+location: "广东"
 
 skills:
-  - name: "二进制安全"
+  - name: "渗透测试"
     items:
-      - "x86_64 汇编"
-      - "ROP 链构造"
-      - "Heap Exploit"
-      - "Linux 内核利用"
+      - "信息收集"
+      - "AI自动化测试"
+      - "软件安全"
+      - "nday利用"
   - name: "编程语言"
     items:
       - "Python"
       - "C/C++"
-      - "JavaScript"
-      - "Golang"
   - name: "工具链"
     items:
-      - "GDB + pwntools"
-      - "IDA Pro / Ghidra"
-      - "Docker / QEMU"
-      - "Git"
+      - "Yakit + Chrom mcp"
+      - "Claude code + Codex"
+      - "IDA Pro + wxapkg"
+      - "Proxifier"
 
 experience:
-  - role: "安全研究员"
-    company: "某安全实验室"
-    period: "2023.06 - 至今"
-    description: "负责二进制漏洞挖掘与利用技术研究，发现多个 0day 漏洞"
-  - role: "安全实习生"
-    company: "某科技公司"
-    period: "2022.07 - 2022.12"
-    description: "参与 Web 安全测试与渗透测试，撰写安全评估报告"
+  - role: "地级护网红队"
+    period: "2025.09.01 - 2025.09.14"
+    description: "负责信息收集与漏洞挖掘，累计挖到了50+漏洞，包括命令执行、SQL注入、未授权访问等高危类型"
 
 projects:
   - name: "heap-exploit-toolkit"
@@ -46,20 +39,12 @@ projects:
     description: "个人 CTF 参赛笔记与题解归档"
     stars: 89
 
-education:
-  - school: "某大学"
-    degree: "网络空间安全 硕士"
-    period: "2021.09 - 2024.06"
-  - school: "某大学"
-    degree: "计算机科学与技术 学士"
-    period: "2017.09 - 2021.06"
-
 certifications:
-  - name: "OSCP"
-    issuer: "OffSec"
-    year: "2023"
+  - name: "Pre-A"
+    issuer: "Sangfor"
+    year: "2026"
 ---
 
 # 关于我
 
-我是一名专注于二进制安全的网络安全研究者，擅长漏洞挖掘与利用技术。
+我是一名专注于渗透测试的网络安全研究者，擅长漏洞挖掘与利用技术。
