@@ -113,10 +113,15 @@ export async function getPost(
   return { ...post, html, headings, readingTime, wordCount };
 }
 
-export function getAllMaterials(): (Material & { slug: string })[] {
+export interface RawMaterial extends Material {
+  slug: string;
+  filePath: string;
+}
+
+export function getAllMaterials(): RawMaterial[] {
   const materialsDir = path.join(process.cwd(), "content", "materials");
   const files = getMdFiles(materialsDir);
-  const results: (Material & { slug: string })[] = [];
+  const results: RawMaterial[] = [];
 
   for (const filePath of files) {
     const raw = fs.readFileSync(filePath, "utf-8");
@@ -132,10 +137,19 @@ export function getAllMaterials(): (Material & { slug: string })[] {
     results.push({
       ...parsed.data,
       slug: path.basename(filePath, ".md"),
+      filePath,
     });
   }
 
   return results;
+}
+
+export function getMaterial(
+  category: string,
+  slug: string
+): RawMaterial | null {
+  const materials = getAllMaterials();
+  return materials.find((m) => m.category === category && m.slug === slug) ?? null;
 }
 
 export function getResume(): Resume {

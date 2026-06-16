@@ -75,7 +75,12 @@ function generateSitemap() {
   for (const filePath of materialFiles) {
     const raw = fs.readFileSync(filePath, "utf-8");
     const { data } = matter(raw);
-    if (data.category) matCats.add(data.category);
+    if (data.draft) continue;
+    if (data.category) {
+      matCats.add(data.category);
+      const slug = data.slug || path.basename(filePath, ".md");
+      urls.push({ url: `${BASE_URL}/materials/${data.category}/${slug}`, priority: "0.5", changefreq: "monthly" });
+    }
   }
   for (const cat of matCats) {
     urls.push({ url: `${BASE_URL}/materials/${cat}`, priority: "0.5", changefreq: "monthly" });

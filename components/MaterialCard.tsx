@@ -1,19 +1,18 @@
-import type { Material } from "@/lib/schema";
+import Link from "next/link";
+import type { RawMaterial } from "@/lib/content";
 import { categories } from "@/config/categories";
 import { formatDate } from "@/lib/utils";
 
 export function MaterialCard({
   material,
 }: {
-  material: Material & { slug: string };
+  material: RawMaterial;
 }) {
   const config = categories[material.category];
 
   return (
-    <a
-      href={material.file_path}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/materials/${material.category}/${material.slug}`}
       className="block p-4 border border-[var(--color-border)]
         hover:translate-y-[-2px] transition-transform duration-200
         bg-[var(--color-bg-card)]"
@@ -51,6 +50,6 @@ export function MaterialCard({
           <span>{material.tags.map((t) => `#${t}`).join(" ")}</span>
         )}
       </div>
-    </a>
+    </Link>
   );
 }

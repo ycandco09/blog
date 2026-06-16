@@ -1,12 +1,12 @@
 ## 关于我
 
-你好！我是一名专注于二进制安全的网络安全研究者。
+你好！我是一名专注于渗透测试的网络安全研究者。
 
 ### 研究方向
 
-- **二进制漏洞利用**：堆溢出、UAF、格式化字符串等
-- **Linux 内核安全**：内核漏洞分析与利用
-- **CTF 竞赛**：Pwn 方向主力选手
+- **AI自动化挖掘**：规则约束，人工复审，hook等
+- **密码学**：Cryptohack与图论
+- **CTF 竞赛**：Web + Crypto方向主力选手
 
 ### 关于本博客
 
@@ -15,5 +15,5 @@
 
 ### 联系方式
 
-- GitHub: [github.com/your-name](https://github.com/your-name)
-- Email: your-name@example.com
+- GitHub: [github.com/ycandco09](https://github.com/ycandco09)
+- Email: 3141507307@qq.com
